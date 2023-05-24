@@ -13,6 +13,7 @@ function Post({blog, key}) {
             </div>
         </div>
     </Link>
+    
   )
 }
 

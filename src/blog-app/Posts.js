@@ -34,6 +34,7 @@ function Posts() {
                 <Post blog={blog} key={index}/>
             ))}
         </div>
+    
     </div>
   )
 }

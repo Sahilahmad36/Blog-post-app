@@ -1,22 +1,23 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import Nav from "./Nav";
-import Posts from "./Posts";
+
 import Detail from './Detail';
 import Create from "./Create";
 import Footer from "./Footer";
+import Posts from "./Posts";
 
 function App() {
     return(
         <BrowserRouter>
         
-            <Nav/>
-            <Switch>
+            <Nav />
             
-                <Route exact path="/" component={Posts} />
+            
+        
                 <Route exact path="/read/:id" component={Detail} />
                 <Route exact path="/newblog" component={Create } />
-            </Switch>
+        <Posts />
             <Footer />
         </BrowserRouter>
     )
